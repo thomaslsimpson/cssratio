@@ -8,5 +8,27 @@ Simple ratios for CSS.
 		</div>
 	</div>
 </div>
+```
+
+This is a simple was to set up fixed ration divs.
+
 
 ```
+<div style='width:100px'> 
+	<div class='ratio-wrapper-2-1'> 
+		<div class='ration-wrapper-inner'> 
+			<div>This will set itself to 50px</div>
+		</div>
+	</div>
+</div>
+
+<div style='width:50%'> 
+	<div class='ratio-wrapper-2-1'> 
+		<div class='ration-wrapper-inner'> 
+			<div>This div will maintain the 2 to 1 ratio.</div>
+		</div>
+	</div>
+</div>
+
+```
+
