@@ -4,724 +4,1146 @@
  * 
  * Produces ratio-based css classes that can be used to get fixed sizes.
  */
-.ratio-wrapper, .ratio-wrapper-1-1, .ratio-wrapper-1-2, .ratio-wrapper-1-3, .ratio-wrapper-1-4, .ratio-wrapper-1-5, .ratio-wrapper-1-6, .ratio-wrapper-1-7, .ratio-wrapper-1-8, .ratio-wrapper-1-9, .ratio-wrapper-1-10, .ratio-wrapper-1-11, .ratio-wrapper-1-12, .ratio-wrapper-1-13, .ratio-wrapper-1-14, .ratio-wrapper-1-15, .ratio-wrapper-2-1, .ratio-wrapper-2-2, .ratio-wrapper-2-3, .ratio-wrapper-2-4, .ratio-wrapper-2-5, .ratio-wrapper-2-6, .ratio-wrapper-2-7, .ratio-wrapper-2-8, .ratio-wrapper-2-9, .ratio-wrapper-2-10, .ratio-wrapper-2-11, .ratio-wrapper-2-12, .ratio-wrapper-2-13, .ratio-wrapper-2-14, .ratio-wrapper-2-15, .ratio-wrapper-3-1, .ratio-wrapper-3-2, .ratio-wrapper-3-3, .ratio-wrapper-3-4, .ratio-wrapper-3-5, .ratio-wrapper-3-6, .ratio-wrapper-3-7, .ratio-wrapper-3-8, .ratio-wrapper-3-9, .ratio-wrapper-3-10, .ratio-wrapper-3-11, .ratio-wrapper-3-12, .ratio-wrapper-3-13, .ratio-wrapper-3-14, .ratio-wrapper-3-15, .ratio-wrapper-4-1, .ratio-wrapper-4-2, .ratio-wrapper-4-3, .ratio-wrapper-4-4, .ratio-wrapper-4-5, .ratio-wrapper-4-6, .ratio-wrapper-4-7, .ratio-wrapper-4-8, .ratio-wrapper-4-9, .ratio-wrapper-4-10, .ratio-wrapper-4-11, .ratio-wrapper-4-12, .ratio-wrapper-4-13, .ratio-wrapper-4-14, .ratio-wrapper-4-15, .ratio-wrapper-5-1, .ratio-wrapper-5-2, .ratio-wrapper-5-3, .ratio-wrapper-5-4, .ratio-wrapper-5-5, .ratio-wrapper-5-6, .ratio-wrapper-5-7, .ratio-wrapper-5-8, .ratio-wrapper-5-9, .ratio-wrapper-5-10, .ratio-wrapper-5-11, .ratio-wrapper-5-12, .ratio-wrapper-5-13, .ratio-wrapper-5-14, .ratio-wrapper-5-15, .ratio-wrapper-6-1, .ratio-wrapper-6-2, .ratio-wrapper-6-3, .ratio-wrapper-6-4, .ratio-wrapper-6-5, .ratio-wrapper-6-6, .ratio-wrapper-6-7, .ratio-wrapper-6-8, .ratio-wrapper-6-9, .ratio-wrapper-6-10, .ratio-wrapper-6-11, .ratio-wrapper-6-12, .ratio-wrapper-6-13, .ratio-wrapper-6-14, .ratio-wrapper-6-15, .ratio-wrapper-7-1, .ratio-wrapper-7-2, .ratio-wrapper-7-3, .ratio-wrapper-7-4, .ratio-wrapper-7-5, .ratio-wrapper-7-6, .ratio-wrapper-7-7, .ratio-wrapper-7-8, .ratio-wrapper-7-9, .ratio-wrapper-7-10, .ratio-wrapper-7-11, .ratio-wrapper-7-12, .ratio-wrapper-7-13, .ratio-wrapper-7-14, .ratio-wrapper-7-15, .ratio-wrapper-8-1, .ratio-wrapper-8-2, .ratio-wrapper-8-3, .ratio-wrapper-8-4, .ratio-wrapper-8-5, .ratio-wrapper-8-6, .ratio-wrapper-8-7, .ratio-wrapper-8-8, .ratio-wrapper-8-9, .ratio-wrapper-8-10, .ratio-wrapper-8-11, .ratio-wrapper-8-12, .ratio-wrapper-8-13, .ratio-wrapper-8-14, .ratio-wrapper-8-15, .ratio-wrapper-9-1, .ratio-wrapper-9-2, .ratio-wrapper-9-3, .ratio-wrapper-9-4, .ratio-wrapper-9-5, .ratio-wrapper-9-6, .ratio-wrapper-9-7, .ratio-wrapper-9-8, .ratio-wrapper-9-9, .ratio-wrapper-9-10, .ratio-wrapper-9-11, .ratio-wrapper-9-12, .ratio-wrapper-9-13, .ratio-wrapper-9-14, .ratio-wrapper-9-15, .ratio-wrapper-10-1, .ratio-wrapper-10-2, .ratio-wrapper-10-3, .ratio-wrapper-10-4, .ratio-wrapper-10-5, .ratio-wrapper-10-6, .ratio-wrapper-10-7, .ratio-wrapper-10-8, .ratio-wrapper-10-9, .ratio-wrapper-10-10, .ratio-wrapper-10-11, .ratio-wrapper-10-12, .ratio-wrapper-10-13, .ratio-wrapper-10-14, .ratio-wrapper-10-15, .ratio-wrapper-11-1, .ratio-wrapper-11-2, .ratio-wrapper-11-3, .ratio-wrapper-11-4, .ratio-wrapper-11-5, .ratio-wrapper-11-6, .ratio-wrapper-11-7, .ratio-wrapper-11-8, .ratio-wrapper-11-9, .ratio-wrapper-11-10, .ratio-wrapper-11-11, .ratio-wrapper-11-12, .ratio-wrapper-11-13, .ratio-wrapper-11-14, .ratio-wrapper-11-15, .ratio-wrapper-12-1, .ratio-wrapper-12-2, .ratio-wrapper-12-3, .ratio-wrapper-12-4, .ratio-wrapper-12-5, .ratio-wrapper-12-6, .ratio-wrapper-12-7, .ratio-wrapper-12-8, .ratio-wrapper-12-9, .ratio-wrapper-12-10, .ratio-wrapper-12-11, .ratio-wrapper-12-12, .ratio-wrapper-12-13, .ratio-wrapper-12-14, .ratio-wrapper-12-15, .ratio-wrapper-13-1, .ratio-wrapper-13-2, .ratio-wrapper-13-3, .ratio-wrapper-13-4, .ratio-wrapper-13-5, .ratio-wrapper-13-6, .ratio-wrapper-13-7, .ratio-wrapper-13-8, .ratio-wrapper-13-9, .ratio-wrapper-13-10, .ratio-wrapper-13-11, .ratio-wrapper-13-12, .ratio-wrapper-13-13, .ratio-wrapper-13-14, .ratio-wrapper-13-15, .ratio-wrapper-14-1, .ratio-wrapper-14-2, .ratio-wrapper-14-3, .ratio-wrapper-14-4, .ratio-wrapper-14-5, .ratio-wrapper-14-6, .ratio-wrapper-14-7, .ratio-wrapper-14-8, .ratio-wrapper-14-9, .ratio-wrapper-14-10, .ratio-wrapper-14-11, .ratio-wrapper-14-12, .ratio-wrapper-14-13, .ratio-wrapper-14-14, .ratio-wrapper-14-15, .ratio-wrapper-15-1, .ratio-wrapper-15-2, .ratio-wrapper-15-3, .ratio-wrapper-15-4, .ratio-wrapper-15-5, .ratio-wrapper-15-6, .ratio-wrapper-15-7, .ratio-wrapper-15-8, .ratio-wrapper-15-9, .ratio-wrapper-15-10, .ratio-wrapper-15-11, .ratio-wrapper-15-12, .ratio-wrapper-15-13, .ratio-wrapper-15-14, .ratio-wrapper-15-15 {
-  width: 100%;
-  position: relative; }
-  .ratio-wrapper .ratio-wrapper-inner, .ratio-wrapper-1-1 .ratio-wrapper-inner, .ratio-wrapper-1-2 .ratio-wrapper-inner, .ratio-wrapper-1-3 .ratio-wrapper-inner, .ratio-wrapper-1-4 .ratio-wrapper-inner, .ratio-wrapper-1-5 .ratio-wrapper-inner, .ratio-wrapper-1-6 .ratio-wrapper-inner, .ratio-wrapper-1-7 .ratio-wrapper-inner, .ratio-wrapper-1-8 .ratio-wrapper-inner, .ratio-wrapper-1-9 .ratio-wrapper-inner, .ratio-wrapper-1-10 .ratio-wrapper-inner, .ratio-wrapper-1-11 .ratio-wrapper-inner, .ratio-wrapper-1-12 .ratio-wrapper-inner, .ratio-wrapper-1-13 .ratio-wrapper-inner, .ratio-wrapper-1-14 .ratio-wrapper-inner, .ratio-wrapper-1-15 .ratio-wrapper-inner, .ratio-wrapper-2-1 .ratio-wrapper-inner, .ratio-wrapper-2-2 .ratio-wrapper-inner, .ratio-wrapper-2-3 .ratio-wrapper-inner, .ratio-wrapper-2-4 .ratio-wrapper-inner, .ratio-wrapper-2-5 .ratio-wrapper-inner, .ratio-wrapper-2-6 .ratio-wrapper-inner, .ratio-wrapper-2-7 .ratio-wrapper-inner, .ratio-wrapper-2-8 .ratio-wrapper-inner, .ratio-wrapper-2-9 .ratio-wrapper-inner, .ratio-wrapper-2-10 .ratio-wrapper-inner, .ratio-wrapper-2-11 .ratio-wrapper-inner, .ratio-wrapper-2-12 .ratio-wrapper-inner, .ratio-wrapper-2-13 .ratio-wrapper-inner, .ratio-wrapper-2-14 .ratio-wrapper-inner, .ratio-wrapper-2-15 .ratio-wrapper-inner, .ratio-wrapper-3-1 .ratio-wrapper-inner, .ratio-wrapper-3-2 .ratio-wrapper-inner, .ratio-wrapper-3-3 .ratio-wrapper-inner, .ratio-wrapper-3-4 .ratio-wrapper-inner, .ratio-wrapper-3-5 .ratio-wrapper-inner, .ratio-wrapper-3-6 .ratio-wrapper-inner, .ratio-wrapper-3-7 .ratio-wrapper-inner, .ratio-wrapper-3-8 .ratio-wrapper-inner, .ratio-wrapper-3-9 .ratio-wrapper-inner, .ratio-wrapper-3-10 .ratio-wrapper-inner, .ratio-wrapper-3-11 .ratio-wrapper-inner, .ratio-wrapper-3-12 .ratio-wrapper-inner, .ratio-wrapper-3-13 .ratio-wrapper-inner, .ratio-wrapper-3-14 .ratio-wrapper-inner, .ratio-wrapper-3-15 .ratio-wrapper-inner, .ratio-wrapper-4-1 .ratio-wrapper-inner, .ratio-wrapper-4-2 .ratio-wrapper-inner, .ratio-wrapper-4-3 .ratio-wrapper-inner, .ratio-wrapper-4-4 .ratio-wrapper-inner, .ratio-wrapper-4-5 .ratio-wrapper-inner, .ratio-wrapper-4-6 .ratio-wrapper-inner, .ratio-wrapper-4-7 .ratio-wrapper-inner, .ratio-wrapper-4-8 .ratio-wrapper-inner, .ratio-wrapper-4-9 .ratio-wrapper-inner, .ratio-wrapper-4-10 .ratio-wrapper-inner, .ratio-wrapper-4-11 .ratio-wrapper-inner, .ratio-wrapper-4-12 .ratio-wrapper-inner, .ratio-wrapper-4-13 .ratio-wrapper-inner, .ratio-wrapper-4-14 .ratio-wrapper-inner, .ratio-wrapper-4-15 .ratio-wrapper-inner, .ratio-wrapper-5-1 .ratio-wrapper-inner, .ratio-wrapper-5-2 .ratio-wrapper-inner, .ratio-wrapper-5-3 .ratio-wrapper-inner, .ratio-wrapper-5-4 .ratio-wrapper-inner, .ratio-wrapper-5-5 .ratio-wrapper-inner, .ratio-wrapper-5-6 .ratio-wrapper-inner, .ratio-wrapper-5-7 .ratio-wrapper-inner, .ratio-wrapper-5-8 .ratio-wrapper-inner, .ratio-wrapper-5-9 .ratio-wrapper-inner, .ratio-wrapper-5-10 .ratio-wrapper-inner, .ratio-wrapper-5-11 .ratio-wrapper-inner, .ratio-wrapper-5-12 .ratio-wrapper-inner, .ratio-wrapper-5-13 .ratio-wrapper-inner, .ratio-wrapper-5-14 .ratio-wrapper-inner, .ratio-wrapper-5-15 .ratio-wrapper-inner, .ratio-wrapper-6-1 .ratio-wrapper-inner, .ratio-wrapper-6-2 .ratio-wrapper-inner, .ratio-wrapper-6-3 .ratio-wrapper-inner, .ratio-wrapper-6-4 .ratio-wrapper-inner, .ratio-wrapper-6-5 .ratio-wrapper-inner, .ratio-wrapper-6-6 .ratio-wrapper-inner, .ratio-wrapper-6-7 .ratio-wrapper-inner, .ratio-wrapper-6-8 .ratio-wrapper-inner, .ratio-wrapper-6-9 .ratio-wrapper-inner, .ratio-wrapper-6-10 .ratio-wrapper-inner, .ratio-wrapper-6-11 .ratio-wrapper-inner, .ratio-wrapper-6-12 .ratio-wrapper-inner, .ratio-wrapper-6-13 .ratio-wrapper-inner, .ratio-wrapper-6-14 .ratio-wrapper-inner, .ratio-wrapper-6-15 .ratio-wrapper-inner, .ratio-wrapper-7-1 .ratio-wrapper-inner, .ratio-wrapper-7-2 .ratio-wrapper-inner, .ratio-wrapper-7-3 .ratio-wrapper-inner, .ratio-wrapper-7-4 .ratio-wrapper-inner, .ratio-wrapper-7-5 .ratio-wrapper-inner, .ratio-wrapper-7-6 .ratio-wrapper-inner, .ratio-wrapper-7-7 .ratio-wrapper-inner, .ratio-wrapper-7-8 .ratio-wrapper-inner, .ratio-wrapper-7-9 .ratio-wrapper-inner, .ratio-wrapper-7-10 .ratio-wrapper-inner, .ratio-wrapper-7-11 .ratio-wrapper-inner, .ratio-wrapper-7-12 .ratio-wrapper-inner, .ratio-wrapper-7-13 .ratio-wrapper-inner, .ratio-wrapper-7-14 .ratio-wrapper-inner, .ratio-wrapper-7-15 .ratio-wrapper-inner, .ratio-wrapper-8-1 .ratio-wrapper-inner, .ratio-wrapper-8-2 .ratio-wrapper-inner, .ratio-wrapper-8-3 .ratio-wrapper-inner, .ratio-wrapper-8-4 .ratio-wrapper-inner, .ratio-wrapper-8-5 .ratio-wrapper-inner, .ratio-wrapper-8-6 .ratio-wrapper-inner, .ratio-wrapper-8-7 .ratio-wrapper-inner, .ratio-wrapper-8-8 .ratio-wrapper-inner, .ratio-wrapper-8-9 .ratio-wrapper-inner, .ratio-wrapper-8-10 .ratio-wrapper-inner, .ratio-wrapper-8-11 .ratio-wrapper-inner, .ratio-wrapper-8-12 .ratio-wrapper-inner, .ratio-wrapper-8-13 .ratio-wrapper-inner, .ratio-wrapper-8-14 .ratio-wrapper-inner, .ratio-wrapper-8-15 .ratio-wrapper-inner, .ratio-wrapper-9-1 .ratio-wrapper-inner, .ratio-wrapper-9-2 .ratio-wrapper-inner, .ratio-wrapper-9-3 .ratio-wrapper-inner, .ratio-wrapper-9-4 .ratio-wrapper-inner, .ratio-wrapper-9-5 .ratio-wrapper-inner, .ratio-wrapper-9-6 .ratio-wrapper-inner, .ratio-wrapper-9-7 .ratio-wrapper-inner, .ratio-wrapper-9-8 .ratio-wrapper-inner, .ratio-wrapper-9-9 .ratio-wrapper-inner, .ratio-wrapper-9-10 .ratio-wrapper-inner, .ratio-wrapper-9-11 .ratio-wrapper-inner, .ratio-wrapper-9-12 .ratio-wrapper-inner, .ratio-wrapper-9-13 .ratio-wrapper-inner, .ratio-wrapper-9-14 .ratio-wrapper-inner, .ratio-wrapper-9-15 .ratio-wrapper-inner, .ratio-wrapper-10-1 .ratio-wrapper-inner, .ratio-wrapper-10-2 .ratio-wrapper-inner, .ratio-wrapper-10-3 .ratio-wrapper-inner, .ratio-wrapper-10-4 .ratio-wrapper-inner, .ratio-wrapper-10-5 .ratio-wrapper-inner, .ratio-wrapper-10-6 .ratio-wrapper-inner, .ratio-wrapper-10-7 .ratio-wrapper-inner, .ratio-wrapper-10-8 .ratio-wrapper-inner, .ratio-wrapper-10-9 .ratio-wrapper-inner, .ratio-wrapper-10-10 .ratio-wrapper-inner, .ratio-wrapper-10-11 .ratio-wrapper-inner, .ratio-wrapper-10-12 .ratio-wrapper-inner, .ratio-wrapper-10-13 .ratio-wrapper-inner, .ratio-wrapper-10-14 .ratio-wrapper-inner, .ratio-wrapper-10-15 .ratio-wrapper-inner, .ratio-wrapper-11-1 .ratio-wrapper-inner, .ratio-wrapper-11-2 .ratio-wrapper-inner, .ratio-wrapper-11-3 .ratio-wrapper-inner, .ratio-wrapper-11-4 .ratio-wrapper-inner, .ratio-wrapper-11-5 .ratio-wrapper-inner, .ratio-wrapper-11-6 .ratio-wrapper-inner, .ratio-wrapper-11-7 .ratio-wrapper-inner, .ratio-wrapper-11-8 .ratio-wrapper-inner, .ratio-wrapper-11-9 .ratio-wrapper-inner, .ratio-wrapper-11-10 .ratio-wrapper-inner, .ratio-wrapper-11-11 .ratio-wrapper-inner, .ratio-wrapper-11-12 .ratio-wrapper-inner, .ratio-wrapper-11-13 .ratio-wrapper-inner, .ratio-wrapper-11-14 .ratio-wrapper-inner, .ratio-wrapper-11-15 .ratio-wrapper-inner, .ratio-wrapper-12-1 .ratio-wrapper-inner, .ratio-wrapper-12-2 .ratio-wrapper-inner, .ratio-wrapper-12-3 .ratio-wrapper-inner, .ratio-wrapper-12-4 .ratio-wrapper-inner, .ratio-wrapper-12-5 .ratio-wrapper-inner, .ratio-wrapper-12-6 .ratio-wrapper-inner, .ratio-wrapper-12-7 .ratio-wrapper-inner, .ratio-wrapper-12-8 .ratio-wrapper-inner, .ratio-wrapper-12-9 .ratio-wrapper-inner, .ratio-wrapper-12-10 .ratio-wrapper-inner, .ratio-wrapper-12-11 .ratio-wrapper-inner, .ratio-wrapper-12-12 .ratio-wrapper-inner, .ratio-wrapper-12-13 .ratio-wrapper-inner, .ratio-wrapper-12-14 .ratio-wrapper-inner, .ratio-wrapper-12-15 .ratio-wrapper-inner, .ratio-wrapper-13-1 .ratio-wrapper-inner, .ratio-wrapper-13-2 .ratio-wrapper-inner, .ratio-wrapper-13-3 .ratio-wrapper-inner, .ratio-wrapper-13-4 .ratio-wrapper-inner, .ratio-wrapper-13-5 .ratio-wrapper-inner, .ratio-wrapper-13-6 .ratio-wrapper-inner, .ratio-wrapper-13-7 .ratio-wrapper-inner, .ratio-wrapper-13-8 .ratio-wrapper-inner, .ratio-wrapper-13-9 .ratio-wrapper-inner, .ratio-wrapper-13-10 .ratio-wrapper-inner, .ratio-wrapper-13-11 .ratio-wrapper-inner, .ratio-wrapper-13-12 .ratio-wrapper-inner, .ratio-wrapper-13-13 .ratio-wrapper-inner, .ratio-wrapper-13-14 .ratio-wrapper-inner, .ratio-wrapper-13-15 .ratio-wrapper-inner, .ratio-wrapper-14-1 .ratio-wrapper-inner, .ratio-wrapper-14-2 .ratio-wrapper-inner, .ratio-wrapper-14-3 .ratio-wrapper-inner, .ratio-wrapper-14-4 .ratio-wrapper-inner, .ratio-wrapper-14-5 .ratio-wrapper-inner, .ratio-wrapper-14-6 .ratio-wrapper-inner, .ratio-wrapper-14-7 .ratio-wrapper-inner, .ratio-wrapper-14-8 .ratio-wrapper-inner, .ratio-wrapper-14-9 .ratio-wrapper-inner, .ratio-wrapper-14-10 .ratio-wrapper-inner, .ratio-wrapper-14-11 .ratio-wrapper-inner, .ratio-wrapper-14-12 .ratio-wrapper-inner, .ratio-wrapper-14-13 .ratio-wrapper-inner, .ratio-wrapper-14-14 .ratio-wrapper-inner, .ratio-wrapper-14-15 .ratio-wrapper-inner, .ratio-wrapper-15-1 .ratio-wrapper-inner, .ratio-wrapper-15-2 .ratio-wrapper-inner, .ratio-wrapper-15-3 .ratio-wrapper-inner, .ratio-wrapper-15-4 .ratio-wrapper-inner, .ratio-wrapper-15-5 .ratio-wrapper-inner, .ratio-wrapper-15-6 .ratio-wrapper-inner, .ratio-wrapper-15-7 .ratio-wrapper-inner, .ratio-wrapper-15-8 .ratio-wrapper-inner, .ratio-wrapper-15-9 .ratio-wrapper-inner, .ratio-wrapper-15-10 .ratio-wrapper-inner, .ratio-wrapper-15-11 .ratio-wrapper-inner, .ratio-wrapper-15-12 .ratio-wrapper-inner, .ratio-wrapper-15-13 .ratio-wrapper-inner, .ratio-wrapper-15-14 .ratio-wrapper-inner, .ratio-wrapper-15-15 .ratio-wrapper-inner {
+.ratio-wrapper-inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .ratio-wrapper-inner .footer {
     position: absolute;
-    top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
-    .ratio-wrapper .ratio-wrapper-inner .footer, .ratio-wrapper-1-1 .ratio-wrapper-inner .footer, .ratio-wrapper-1-2 .ratio-wrapper-inner .footer, .ratio-wrapper-1-3 .ratio-wrapper-inner .footer, .ratio-wrapper-1-4 .ratio-wrapper-inner .footer, .ratio-wrapper-1-5 .ratio-wrapper-inner .footer, .ratio-wrapper-1-6 .ratio-wrapper-inner .footer, .ratio-wrapper-1-7 .ratio-wrapper-inner .footer, .ratio-wrapper-1-8 .ratio-wrapper-inner .footer, .ratio-wrapper-1-9 .ratio-wrapper-inner .footer, .ratio-wrapper-1-10 .ratio-wrapper-inner .footer, .ratio-wrapper-1-11 .ratio-wrapper-inner .footer, .ratio-wrapper-1-12 .ratio-wrapper-inner .footer, .ratio-wrapper-1-13 .ratio-wrapper-inner .footer, .ratio-wrapper-1-14 .ratio-wrapper-inner .footer, .ratio-wrapper-1-15 .ratio-wrapper-inner .footer, .ratio-wrapper-2-1 .ratio-wrapper-inner .footer, .ratio-wrapper-2-2 .ratio-wrapper-inner .footer, .ratio-wrapper-2-3 .ratio-wrapper-inner .footer, .ratio-wrapper-2-4 .ratio-wrapper-inner .footer, .ratio-wrapper-2-5 .ratio-wrapper-inner .footer, .ratio-wrapper-2-6 .ratio-wrapper-inner .footer, .ratio-wrapper-2-7 .ratio-wrapper-inner .footer, .ratio-wrapper-2-8 .ratio-wrapper-inner .footer, .ratio-wrapper-2-9 .ratio-wrapper-inner .footer, .ratio-wrapper-2-10 .ratio-wrapper-inner .footer, .ratio-wrapper-2-11 .ratio-wrapper-inner .footer, .ratio-wrapper-2-12 .ratio-wrapper-inner .footer, .ratio-wrapper-2-13 .ratio-wrapper-inner .footer, .ratio-wrapper-2-14 .ratio-wrapper-inner .footer, .ratio-wrapper-2-15 .ratio-wrapper-inner .footer, .ratio-wrapper-3-1 .ratio-wrapper-inner .footer, .ratio-wrapper-3-2 .ratio-wrapper-inner .footer, .ratio-wrapper-3-3 .ratio-wrapper-inner .footer, .ratio-wrapper-3-4 .ratio-wrapper-inner .footer, .ratio-wrapper-3-5 .ratio-wrapper-inner .footer, .ratio-wrapper-3-6 .ratio-wrapper-inner .footer, .ratio-wrapper-3-7 .ratio-wrapper-inner .footer, .ratio-wrapper-3-8 .ratio-wrapper-inner .footer, .ratio-wrapper-3-9 .ratio-wrapper-inner .footer, .ratio-wrapper-3-10 .ratio-wrapper-inner .footer, .ratio-wrapper-3-11 .ratio-wrapper-inner .footer, .ratio-wrapper-3-12 .ratio-wrapper-inner .footer, .ratio-wrapper-3-13 .ratio-wrapper-inner .footer, .ratio-wrapper-3-14 .ratio-wrapper-inner .footer, .ratio-wrapper-3-15 .ratio-wrapper-inner .footer, .ratio-wrapper-4-1 .ratio-wrapper-inner .footer, .ratio-wrapper-4-2 .ratio-wrapper-inner .footer, .ratio-wrapper-4-3 .ratio-wrapper-inner .footer, .ratio-wrapper-4-4 .ratio-wrapper-inner .footer, .ratio-wrapper-4-5 .ratio-wrapper-inner .footer, .ratio-wrapper-4-6 .ratio-wrapper-inner .footer, .ratio-wrapper-4-7 .ratio-wrapper-inner .footer, .ratio-wrapper-4-8 .ratio-wrapper-inner .footer, .ratio-wrapper-4-9 .ratio-wrapper-inner .footer, .ratio-wrapper-4-10 .ratio-wrapper-inner .footer, .ratio-wrapper-4-11 .ratio-wrapper-inner .footer, .ratio-wrapper-4-12 .ratio-wrapper-inner .footer, .ratio-wrapper-4-13 .ratio-wrapper-inner .footer, .ratio-wrapper-4-14 .ratio-wrapper-inner .footer, .ratio-wrapper-4-15 .ratio-wrapper-inner .footer, .ratio-wrapper-5-1 .ratio-wrapper-inner .footer, .ratio-wrapper-5-2 .ratio-wrapper-inner .footer, .ratio-wrapper-5-3 .ratio-wrapper-inner .footer, .ratio-wrapper-5-4 .ratio-wrapper-inner .footer, .ratio-wrapper-5-5 .ratio-wrapper-inner .footer, .ratio-wrapper-5-6 .ratio-wrapper-inner .footer, .ratio-wrapper-5-7 .ratio-wrapper-inner .footer, .ratio-wrapper-5-8 .ratio-wrapper-inner .footer, .ratio-wrapper-5-9 .ratio-wrapper-inner .footer, .ratio-wrapper-5-10 .ratio-wrapper-inner .footer, .ratio-wrapper-5-11 .ratio-wrapper-inner .footer, .ratio-wrapper-5-12 .ratio-wrapper-inner .footer, .ratio-wrapper-5-13 .ratio-wrapper-inner .footer, .ratio-wrapper-5-14 .ratio-wrapper-inner .footer, .ratio-wrapper-5-15 .ratio-wrapper-inner .footer, .ratio-wrapper-6-1 .ratio-wrapper-inner .footer, .ratio-wrapper-6-2 .ratio-wrapper-inner .footer, .ratio-wrapper-6-3 .ratio-wrapper-inner .footer, .ratio-wrapper-6-4 .ratio-wrapper-inner .footer, .ratio-wrapper-6-5 .ratio-wrapper-inner .footer, .ratio-wrapper-6-6 .ratio-wrapper-inner .footer, .ratio-wrapper-6-7 .ratio-wrapper-inner .footer, .ratio-wrapper-6-8 .ratio-wrapper-inner .footer, .ratio-wrapper-6-9 .ratio-wrapper-inner .footer, .ratio-wrapper-6-10 .ratio-wrapper-inner .footer, .ratio-wrapper-6-11 .ratio-wrapper-inner .footer, .ratio-wrapper-6-12 .ratio-wrapper-inner .footer, .ratio-wrapper-6-13 .ratio-wrapper-inner .footer, .ratio-wrapper-6-14 .ratio-wrapper-inner .footer, .ratio-wrapper-6-15 .ratio-wrapper-inner .footer, .ratio-wrapper-7-1 .ratio-wrapper-inner .footer, .ratio-wrapper-7-2 .ratio-wrapper-inner .footer, .ratio-wrapper-7-3 .ratio-wrapper-inner .footer, .ratio-wrapper-7-4 .ratio-wrapper-inner .footer, .ratio-wrapper-7-5 .ratio-wrapper-inner .footer, .ratio-wrapper-7-6 .ratio-wrapper-inner .footer, .ratio-wrapper-7-7 .ratio-wrapper-inner .footer, .ratio-wrapper-7-8 .ratio-wrapper-inner .footer, .ratio-wrapper-7-9 .ratio-wrapper-inner .footer, .ratio-wrapper-7-10 .ratio-wrapper-inner .footer, .ratio-wrapper-7-11 .ratio-wrapper-inner .footer, .ratio-wrapper-7-12 .ratio-wrapper-inner .footer, .ratio-wrapper-7-13 .ratio-wrapper-inner .footer, .ratio-wrapper-7-14 .ratio-wrapper-inner .footer, .ratio-wrapper-7-15 .ratio-wrapper-inner .footer, .ratio-wrapper-8-1 .ratio-wrapper-inner .footer, .ratio-wrapper-8-2 .ratio-wrapper-inner .footer, .ratio-wrapper-8-3 .ratio-wrapper-inner .footer, .ratio-wrapper-8-4 .ratio-wrapper-inner .footer, .ratio-wrapper-8-5 .ratio-wrapper-inner .footer, .ratio-wrapper-8-6 .ratio-wrapper-inner .footer, .ratio-wrapper-8-7 .ratio-wrapper-inner .footer, .ratio-wrapper-8-8 .ratio-wrapper-inner .footer, .ratio-wrapper-8-9 .ratio-wrapper-inner .footer, .ratio-wrapper-8-10 .ratio-wrapper-inner .footer, .ratio-wrapper-8-11 .ratio-wrapper-inner .footer, .ratio-wrapper-8-12 .ratio-wrapper-inner .footer, .ratio-wrapper-8-13 .ratio-wrapper-inner .footer, .ratio-wrapper-8-14 .ratio-wrapper-inner .footer, .ratio-wrapper-8-15 .ratio-wrapper-inner .footer, .ratio-wrapper-9-1 .ratio-wrapper-inner .footer, .ratio-wrapper-9-2 .ratio-wrapper-inner .footer, .ratio-wrapper-9-3 .ratio-wrapper-inner .footer, .ratio-wrapper-9-4 .ratio-wrapper-inner .footer, .ratio-wrapper-9-5 .ratio-wrapper-inner .footer, .ratio-wrapper-9-6 .ratio-wrapper-inner .footer, .ratio-wrapper-9-7 .ratio-wrapper-inner .footer, .ratio-wrapper-9-8 .ratio-wrapper-inner .footer, .ratio-wrapper-9-9 .ratio-wrapper-inner .footer, .ratio-wrapper-9-10 .ratio-wrapper-inner .footer, .ratio-wrapper-9-11 .ratio-wrapper-inner .footer, .ratio-wrapper-9-12 .ratio-wrapper-inner .footer, .ratio-wrapper-9-13 .ratio-wrapper-inner .footer, .ratio-wrapper-9-14 .ratio-wrapper-inner .footer, .ratio-wrapper-9-15 .ratio-wrapper-inner .footer, .ratio-wrapper-10-1 .ratio-wrapper-inner .footer, .ratio-wrapper-10-2 .ratio-wrapper-inner .footer, .ratio-wrapper-10-3 .ratio-wrapper-inner .footer, .ratio-wrapper-10-4 .ratio-wrapper-inner .footer, .ratio-wrapper-10-5 .ratio-wrapper-inner .footer, .ratio-wrapper-10-6 .ratio-wrapper-inner .footer, .ratio-wrapper-10-7 .ratio-wrapper-inner .footer, .ratio-wrapper-10-8 .ratio-wrapper-inner .footer, .ratio-wrapper-10-9 .ratio-wrapper-inner .footer, .ratio-wrapper-10-10 .ratio-wrapper-inner .footer, .ratio-wrapper-10-11 .ratio-wrapper-inner .footer, .ratio-wrapper-10-12 .ratio-wrapper-inner .footer, .ratio-wrapper-10-13 .ratio-wrapper-inner .footer, .ratio-wrapper-10-14 .ratio-wrapper-inner .footer, .ratio-wrapper-10-15 .ratio-wrapper-inner .footer, .ratio-wrapper-11-1 .ratio-wrapper-inner .footer, .ratio-wrapper-11-2 .ratio-wrapper-inner .footer, .ratio-wrapper-11-3 .ratio-wrapper-inner .footer, .ratio-wrapper-11-4 .ratio-wrapper-inner .footer, .ratio-wrapper-11-5 .ratio-wrapper-inner .footer, .ratio-wrapper-11-6 .ratio-wrapper-inner .footer, .ratio-wrapper-11-7 .ratio-wrapper-inner .footer, .ratio-wrapper-11-8 .ratio-wrapper-inner .footer, .ratio-wrapper-11-9 .ratio-wrapper-inner .footer, .ratio-wrapper-11-10 .ratio-wrapper-inner .footer, .ratio-wrapper-11-11 .ratio-wrapper-inner .footer, .ratio-wrapper-11-12 .ratio-wrapper-inner .footer, .ratio-wrapper-11-13 .ratio-wrapper-inner .footer, .ratio-wrapper-11-14 .ratio-wrapper-inner .footer, .ratio-wrapper-11-15 .ratio-wrapper-inner .footer, .ratio-wrapper-12-1 .ratio-wrapper-inner .footer, .ratio-wrapper-12-2 .ratio-wrapper-inner .footer, .ratio-wrapper-12-3 .ratio-wrapper-inner .footer, .ratio-wrapper-12-4 .ratio-wrapper-inner .footer, .ratio-wrapper-12-5 .ratio-wrapper-inner .footer, .ratio-wrapper-12-6 .ratio-wrapper-inner .footer, .ratio-wrapper-12-7 .ratio-wrapper-inner .footer, .ratio-wrapper-12-8 .ratio-wrapper-inner .footer, .ratio-wrapper-12-9 .ratio-wrapper-inner .footer, .ratio-wrapper-12-10 .ratio-wrapper-inner .footer, .ratio-wrapper-12-11 .ratio-wrapper-inner .footer, .ratio-wrapper-12-12 .ratio-wrapper-inner .footer, .ratio-wrapper-12-13 .ratio-wrapper-inner .footer, .ratio-wrapper-12-14 .ratio-wrapper-inner .footer, .ratio-wrapper-12-15 .ratio-wrapper-inner .footer, .ratio-wrapper-13-1 .ratio-wrapper-inner .footer, .ratio-wrapper-13-2 .ratio-wrapper-inner .footer, .ratio-wrapper-13-3 .ratio-wrapper-inner .footer, .ratio-wrapper-13-4 .ratio-wrapper-inner .footer, .ratio-wrapper-13-5 .ratio-wrapper-inner .footer, .ratio-wrapper-13-6 .ratio-wrapper-inner .footer, .ratio-wrapper-13-7 .ratio-wrapper-inner .footer, .ratio-wrapper-13-8 .ratio-wrapper-inner .footer, .ratio-wrapper-13-9 .ratio-wrapper-inner .footer, .ratio-wrapper-13-10 .ratio-wrapper-inner .footer, .ratio-wrapper-13-11 .ratio-wrapper-inner .footer, .ratio-wrapper-13-12 .ratio-wrapper-inner .footer, .ratio-wrapper-13-13 .ratio-wrapper-inner .footer, .ratio-wrapper-13-14 .ratio-wrapper-inner .footer, .ratio-wrapper-13-15 .ratio-wrapper-inner .footer, .ratio-wrapper-14-1 .ratio-wrapper-inner .footer, .ratio-wrapper-14-2 .ratio-wrapper-inner .footer, .ratio-wrapper-14-3 .ratio-wrapper-inner .footer, .ratio-wrapper-14-4 .ratio-wrapper-inner .footer, .ratio-wrapper-14-5 .ratio-wrapper-inner .footer, .ratio-wrapper-14-6 .ratio-wrapper-inner .footer, .ratio-wrapper-14-7 .ratio-wrapper-inner .footer, .ratio-wrapper-14-8 .ratio-wrapper-inner .footer, .ratio-wrapper-14-9 .ratio-wrapper-inner .footer, .ratio-wrapper-14-10 .ratio-wrapper-inner .footer, .ratio-wrapper-14-11 .ratio-wrapper-inner .footer, .ratio-wrapper-14-12 .ratio-wrapper-inner .footer, .ratio-wrapper-14-13 .ratio-wrapper-inner .footer, .ratio-wrapper-14-14 .ratio-wrapper-inner .footer, .ratio-wrapper-14-15 .ratio-wrapper-inner .footer, .ratio-wrapper-15-1 .ratio-wrapper-inner .footer, .ratio-wrapper-15-2 .ratio-wrapper-inner .footer, .ratio-wrapper-15-3 .ratio-wrapper-inner .footer, .ratio-wrapper-15-4 .ratio-wrapper-inner .footer, .ratio-wrapper-15-5 .ratio-wrapper-inner .footer, .ratio-wrapper-15-6 .ratio-wrapper-inner .footer, .ratio-wrapper-15-7 .ratio-wrapper-inner .footer, .ratio-wrapper-15-8 .ratio-wrapper-inner .footer, .ratio-wrapper-15-9 .ratio-wrapper-inner .footer, .ratio-wrapper-15-10 .ratio-wrapper-inner .footer, .ratio-wrapper-15-11 .ratio-wrapper-inner .footer, .ratio-wrapper-15-12 .ratio-wrapper-inner .footer, .ratio-wrapper-15-13 .ratio-wrapper-inner .footer, .ratio-wrapper-15-14 .ratio-wrapper-inner .footer, .ratio-wrapper-15-15 .ratio-wrapper-inner .footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0; }
-    .ratio-wrapper .ratio-wrapper-inner .header, .ratio-wrapper-1-1 .ratio-wrapper-inner .header, .ratio-wrapper-1-2 .ratio-wrapper-inner .header, .ratio-wrapper-1-3 .ratio-wrapper-inner .header, .ratio-wrapper-1-4 .ratio-wrapper-inner .header, .ratio-wrapper-1-5 .ratio-wrapper-inner .header, .ratio-wrapper-1-6 .ratio-wrapper-inner .header, .ratio-wrapper-1-7 .ratio-wrapper-inner .header, .ratio-wrapper-1-8 .ratio-wrapper-inner .header, .ratio-wrapper-1-9 .ratio-wrapper-inner .header, .ratio-wrapper-1-10 .ratio-wrapper-inner .header, .ratio-wrapper-1-11 .ratio-wrapper-inner .header, .ratio-wrapper-1-12 .ratio-wrapper-inner .header, .ratio-wrapper-1-13 .ratio-wrapper-inner .header, .ratio-wrapper-1-14 .ratio-wrapper-inner .header, .ratio-wrapper-1-15 .ratio-wrapper-inner .header, .ratio-wrapper-2-1 .ratio-wrapper-inner .header, .ratio-wrapper-2-2 .ratio-wrapper-inner .header, .ratio-wrapper-2-3 .ratio-wrapper-inner .header, .ratio-wrapper-2-4 .ratio-wrapper-inner .header, .ratio-wrapper-2-5 .ratio-wrapper-inner .header, .ratio-wrapper-2-6 .ratio-wrapper-inner .header, .ratio-wrapper-2-7 .ratio-wrapper-inner .header, .ratio-wrapper-2-8 .ratio-wrapper-inner .header, .ratio-wrapper-2-9 .ratio-wrapper-inner .header, .ratio-wrapper-2-10 .ratio-wrapper-inner .header, .ratio-wrapper-2-11 .ratio-wrapper-inner .header, .ratio-wrapper-2-12 .ratio-wrapper-inner .header, .ratio-wrapper-2-13 .ratio-wrapper-inner .header, .ratio-wrapper-2-14 .ratio-wrapper-inner .header, .ratio-wrapper-2-15 .ratio-wrapper-inner .header, .ratio-wrapper-3-1 .ratio-wrapper-inner .header, .ratio-wrapper-3-2 .ratio-wrapper-inner .header, .ratio-wrapper-3-3 .ratio-wrapper-inner .header, .ratio-wrapper-3-4 .ratio-wrapper-inner .header, .ratio-wrapper-3-5 .ratio-wrapper-inner .header, .ratio-wrapper-3-6 .ratio-wrapper-inner .header, .ratio-wrapper-3-7 .ratio-wrapper-inner .header, .ratio-wrapper-3-8 .ratio-wrapper-inner .header, .ratio-wrapper-3-9 .ratio-wrapper-inner .header, .ratio-wrapper-3-10 .ratio-wrapper-inner .header, .ratio-wrapper-3-11 .ratio-wrapper-inner .header, .ratio-wrapper-3-12 .ratio-wrapper-inner .header, .ratio-wrapper-3-13 .ratio-wrapper-inner .header, .ratio-wrapper-3-14 .ratio-wrapper-inner .header, .ratio-wrapper-3-15 .ratio-wrapper-inner .header, .ratio-wrapper-4-1 .ratio-wrapper-inner .header, .ratio-wrapper-4-2 .ratio-wrapper-inner .header, .ratio-wrapper-4-3 .ratio-wrapper-inner .header, .ratio-wrapper-4-4 .ratio-wrapper-inner .header, .ratio-wrapper-4-5 .ratio-wrapper-inner .header, .ratio-wrapper-4-6 .ratio-wrapper-inner .header, .ratio-wrapper-4-7 .ratio-wrapper-inner .header, .ratio-wrapper-4-8 .ratio-wrapper-inner .header, .ratio-wrapper-4-9 .ratio-wrapper-inner .header, .ratio-wrapper-4-10 .ratio-wrapper-inner .header, .ratio-wrapper-4-11 .ratio-wrapper-inner .header, .ratio-wrapper-4-12 .ratio-wrapper-inner .header, .ratio-wrapper-4-13 .ratio-wrapper-inner .header, .ratio-wrapper-4-14 .ratio-wrapper-inner .header, .ratio-wrapper-4-15 .ratio-wrapper-inner .header, .ratio-wrapper-5-1 .ratio-wrapper-inner .header, .ratio-wrapper-5-2 .ratio-wrapper-inner .header, .ratio-wrapper-5-3 .ratio-wrapper-inner .header, .ratio-wrapper-5-4 .ratio-wrapper-inner .header, .ratio-wrapper-5-5 .ratio-wrapper-inner .header, .ratio-wrapper-5-6 .ratio-wrapper-inner .header, .ratio-wrapper-5-7 .ratio-wrapper-inner .header, .ratio-wrapper-5-8 .ratio-wrapper-inner .header, .ratio-wrapper-5-9 .ratio-wrapper-inner .header, .ratio-wrapper-5-10 .ratio-wrapper-inner .header, .ratio-wrapper-5-11 .ratio-wrapper-inner .header, .ratio-wrapper-5-12 .ratio-wrapper-inner .header, .ratio-wrapper-5-13 .ratio-wrapper-inner .header, .ratio-wrapper-5-14 .ratio-wrapper-inner .header, .ratio-wrapper-5-15 .ratio-wrapper-inner .header, .ratio-wrapper-6-1 .ratio-wrapper-inner .header, .ratio-wrapper-6-2 .ratio-wrapper-inner .header, .ratio-wrapper-6-3 .ratio-wrapper-inner .header, .ratio-wrapper-6-4 .ratio-wrapper-inner .header, .ratio-wrapper-6-5 .ratio-wrapper-inner .header, .ratio-wrapper-6-6 .ratio-wrapper-inner .header, .ratio-wrapper-6-7 .ratio-wrapper-inner .header, .ratio-wrapper-6-8 .ratio-wrapper-inner .header, .ratio-wrapper-6-9 .ratio-wrapper-inner .header, .ratio-wrapper-6-10 .ratio-wrapper-inner .header, .ratio-wrapper-6-11 .ratio-wrapper-inner .header, .ratio-wrapper-6-12 .ratio-wrapper-inner .header, .ratio-wrapper-6-13 .ratio-wrapper-inner .header, .ratio-wrapper-6-14 .ratio-wrapper-inner .header, .ratio-wrapper-6-15 .ratio-wrapper-inner .header, .ratio-wrapper-7-1 .ratio-wrapper-inner .header, .ratio-wrapper-7-2 .ratio-wrapper-inner .header, .ratio-wrapper-7-3 .ratio-wrapper-inner .header, .ratio-wrapper-7-4 .ratio-wrapper-inner .header, .ratio-wrapper-7-5 .ratio-wrapper-inner .header, .ratio-wrapper-7-6 .ratio-wrapper-inner .header, .ratio-wrapper-7-7 .ratio-wrapper-inner .header, .ratio-wrapper-7-8 .ratio-wrapper-inner .header, .ratio-wrapper-7-9 .ratio-wrapper-inner .header, .ratio-wrapper-7-10 .ratio-wrapper-inner .header, .ratio-wrapper-7-11 .ratio-wrapper-inner .header, .ratio-wrapper-7-12 .ratio-wrapper-inner .header, .ratio-wrapper-7-13 .ratio-wrapper-inner .header, .ratio-wrapper-7-14 .ratio-wrapper-inner .header, .ratio-wrapper-7-15 .ratio-wrapper-inner .header, .ratio-wrapper-8-1 .ratio-wrapper-inner .header, .ratio-wrapper-8-2 .ratio-wrapper-inner .header, .ratio-wrapper-8-3 .ratio-wrapper-inner .header, .ratio-wrapper-8-4 .ratio-wrapper-inner .header, .ratio-wrapper-8-5 .ratio-wrapper-inner .header, .ratio-wrapper-8-6 .ratio-wrapper-inner .header, .ratio-wrapper-8-7 .ratio-wrapper-inner .header, .ratio-wrapper-8-8 .ratio-wrapper-inner .header, .ratio-wrapper-8-9 .ratio-wrapper-inner .header, .ratio-wrapper-8-10 .ratio-wrapper-inner .header, .ratio-wrapper-8-11 .ratio-wrapper-inner .header, .ratio-wrapper-8-12 .ratio-wrapper-inner .header, .ratio-wrapper-8-13 .ratio-wrapper-inner .header, .ratio-wrapper-8-14 .ratio-wrapper-inner .header, .ratio-wrapper-8-15 .ratio-wrapper-inner .header, .ratio-wrapper-9-1 .ratio-wrapper-inner .header, .ratio-wrapper-9-2 .ratio-wrapper-inner .header, .ratio-wrapper-9-3 .ratio-wrapper-inner .header, .ratio-wrapper-9-4 .ratio-wrapper-inner .header, .ratio-wrapper-9-5 .ratio-wrapper-inner .header, .ratio-wrapper-9-6 .ratio-wrapper-inner .header, .ratio-wrapper-9-7 .ratio-wrapper-inner .header, .ratio-wrapper-9-8 .ratio-wrapper-inner .header, .ratio-wrapper-9-9 .ratio-wrapper-inner .header, .ratio-wrapper-9-10 .ratio-wrapper-inner .header, .ratio-wrapper-9-11 .ratio-wrapper-inner .header, .ratio-wrapper-9-12 .ratio-wrapper-inner .header, .ratio-wrapper-9-13 .ratio-wrapper-inner .header, .ratio-wrapper-9-14 .ratio-wrapper-inner .header, .ratio-wrapper-9-15 .ratio-wrapper-inner .header, .ratio-wrapper-10-1 .ratio-wrapper-inner .header, .ratio-wrapper-10-2 .ratio-wrapper-inner .header, .ratio-wrapper-10-3 .ratio-wrapper-inner .header, .ratio-wrapper-10-4 .ratio-wrapper-inner .header, .ratio-wrapper-10-5 .ratio-wrapper-inner .header, .ratio-wrapper-10-6 .ratio-wrapper-inner .header, .ratio-wrapper-10-7 .ratio-wrapper-inner .header, .ratio-wrapper-10-8 .ratio-wrapper-inner .header, .ratio-wrapper-10-9 .ratio-wrapper-inner .header, .ratio-wrapper-10-10 .ratio-wrapper-inner .header, .ratio-wrapper-10-11 .ratio-wrapper-inner .header, .ratio-wrapper-10-12 .ratio-wrapper-inner .header, .ratio-wrapper-10-13 .ratio-wrapper-inner .header, .ratio-wrapper-10-14 .ratio-wrapper-inner .header, .ratio-wrapper-10-15 .ratio-wrapper-inner .header, .ratio-wrapper-11-1 .ratio-wrapper-inner .header, .ratio-wrapper-11-2 .ratio-wrapper-inner .header, .ratio-wrapper-11-3 .ratio-wrapper-inner .header, .ratio-wrapper-11-4 .ratio-wrapper-inner .header, .ratio-wrapper-11-5 .ratio-wrapper-inner .header, .ratio-wrapper-11-6 .ratio-wrapper-inner .header, .ratio-wrapper-11-7 .ratio-wrapper-inner .header, .ratio-wrapper-11-8 .ratio-wrapper-inner .header, .ratio-wrapper-11-9 .ratio-wrapper-inner .header, .ratio-wrapper-11-10 .ratio-wrapper-inner .header, .ratio-wrapper-11-11 .ratio-wrapper-inner .header, .ratio-wrapper-11-12 .ratio-wrapper-inner .header, .ratio-wrapper-11-13 .ratio-wrapper-inner .header, .ratio-wrapper-11-14 .ratio-wrapper-inner .header, .ratio-wrapper-11-15 .ratio-wrapper-inner .header, .ratio-wrapper-12-1 .ratio-wrapper-inner .header, .ratio-wrapper-12-2 .ratio-wrapper-inner .header, .ratio-wrapper-12-3 .ratio-wrapper-inner .header, .ratio-wrapper-12-4 .ratio-wrapper-inner .header, .ratio-wrapper-12-5 .ratio-wrapper-inner .header, .ratio-wrapper-12-6 .ratio-wrapper-inner .header, .ratio-wrapper-12-7 .ratio-wrapper-inner .header, .ratio-wrapper-12-8 .ratio-wrapper-inner .header, .ratio-wrapper-12-9 .ratio-wrapper-inner .header, .ratio-wrapper-12-10 .ratio-wrapper-inner .header, .ratio-wrapper-12-11 .ratio-wrapper-inner .header, .ratio-wrapper-12-12 .ratio-wrapper-inner .header, .ratio-wrapper-12-13 .ratio-wrapper-inner .header, .ratio-wrapper-12-14 .ratio-wrapper-inner .header, .ratio-wrapper-12-15 .ratio-wrapper-inner .header, .ratio-wrapper-13-1 .ratio-wrapper-inner .header, .ratio-wrapper-13-2 .ratio-wrapper-inner .header, .ratio-wrapper-13-3 .ratio-wrapper-inner .header, .ratio-wrapper-13-4 .ratio-wrapper-inner .header, .ratio-wrapper-13-5 .ratio-wrapper-inner .header, .ratio-wrapper-13-6 .ratio-wrapper-inner .header, .ratio-wrapper-13-7 .ratio-wrapper-inner .header, .ratio-wrapper-13-8 .ratio-wrapper-inner .header, .ratio-wrapper-13-9 .ratio-wrapper-inner .header, .ratio-wrapper-13-10 .ratio-wrapper-inner .header, .ratio-wrapper-13-11 .ratio-wrapper-inner .header, .ratio-wrapper-13-12 .ratio-wrapper-inner .header, .ratio-wrapper-13-13 .ratio-wrapper-inner .header, .ratio-wrapper-13-14 .ratio-wrapper-inner .header, .ratio-wrapper-13-15 .ratio-wrapper-inner .header, .ratio-wrapper-14-1 .ratio-wrapper-inner .header, .ratio-wrapper-14-2 .ratio-wrapper-inner .header, .ratio-wrapper-14-3 .ratio-wrapper-inner .header, .ratio-wrapper-14-4 .ratio-wrapper-inner .header, .ratio-wrapper-14-5 .ratio-wrapper-inner .header, .ratio-wrapper-14-6 .ratio-wrapper-inner .header, .ratio-wrapper-14-7 .ratio-wrapper-inner .header, .ratio-wrapper-14-8 .ratio-wrapper-inner .header, .ratio-wrapper-14-9 .ratio-wrapper-inner .header, .ratio-wrapper-14-10 .ratio-wrapper-inner .header, .ratio-wrapper-14-11 .ratio-wrapper-inner .header, .ratio-wrapper-14-12 .ratio-wrapper-inner .header, .ratio-wrapper-14-13 .ratio-wrapper-inner .header, .ratio-wrapper-14-14 .ratio-wrapper-inner .header, .ratio-wrapper-14-15 .ratio-wrapper-inner .header, .ratio-wrapper-15-1 .ratio-wrapper-inner .header, .ratio-wrapper-15-2 .ratio-wrapper-inner .header, .ratio-wrapper-15-3 .ratio-wrapper-inner .header, .ratio-wrapper-15-4 .ratio-wrapper-inner .header, .ratio-wrapper-15-5 .ratio-wrapper-inner .header, .ratio-wrapper-15-6 .ratio-wrapper-inner .header, .ratio-wrapper-15-7 .ratio-wrapper-inner .header, .ratio-wrapper-15-8 .ratio-wrapper-inner .header, .ratio-wrapper-15-9 .ratio-wrapper-inner .header, .ratio-wrapper-15-10 .ratio-wrapper-inner .header, .ratio-wrapper-15-11 .ratio-wrapper-inner .header, .ratio-wrapper-15-12 .ratio-wrapper-inner .header, .ratio-wrapper-15-13 .ratio-wrapper-inner .header, .ratio-wrapper-15-14 .ratio-wrapper-inner .header, .ratio-wrapper-15-15 .ratio-wrapper-inner .header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0; }
+  .ratio-wrapper-inner .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
 
 .ratio-wrapper-1-1 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-1-2 {
+  width: 100%;
+  position: relative;
   padding-bottom: 200%; }
 
 .ratio-wrapper-1-3 {
+  width: 100%;
+  position: relative;
   padding-bottom: 300%; }
 
 .ratio-wrapper-1-4 {
+  width: 100%;
+  position: relative;
   padding-bottom: 400%; }
 
 .ratio-wrapper-1-5 {
+  width: 100%;
+  position: relative;
   padding-bottom: 500%; }
 
 .ratio-wrapper-1-6 {
+  width: 100%;
+  position: relative;
   padding-bottom: 600%; }
 
 .ratio-wrapper-1-7 {
+  width: 100%;
+  position: relative;
   padding-bottom: 700%; }
 
 .ratio-wrapper-1-8 {
+  width: 100%;
+  position: relative;
   padding-bottom: 800%; }
 
 .ratio-wrapper-1-9 {
+  width: 100%;
+  position: relative;
   padding-bottom: 900%; }
 
 .ratio-wrapper-1-10 {
+  width: 100%;
+  position: relative;
   padding-bottom: 1000%; }
 
 .ratio-wrapper-1-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 1100%; }
 
 .ratio-wrapper-1-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 1200%; }
 
 .ratio-wrapper-1-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 1300%; }
 
 .ratio-wrapper-1-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 1400%; }
 
 .ratio-wrapper-1-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 1500%; }
 
 .ratio-wrapper-2-1 {
-  padding-bottom: 200%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 50%; }
 
 .ratio-wrapper-2-2 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-2-3 {
+  width: 100%;
+  position: relative;
   padding-bottom: 150%; }
 
 .ratio-wrapper-2-4 {
+  width: 100%;
+  position: relative;
   padding-bottom: 200%; }
 
 .ratio-wrapper-2-5 {
+  width: 100%;
+  position: relative;
   padding-bottom: 250%; }
 
 .ratio-wrapper-2-6 {
+  width: 100%;
+  position: relative;
   padding-bottom: 300%; }
 
 .ratio-wrapper-2-7 {
+  width: 100%;
+  position: relative;
   padding-bottom: 350%; }
 
 .ratio-wrapper-2-8 {
+  width: 100%;
+  position: relative;
   padding-bottom: 400%; }
 
 .ratio-wrapper-2-9 {
+  width: 100%;
+  position: relative;
   padding-bottom: 450%; }
 
 .ratio-wrapper-2-10 {
+  width: 100%;
+  position: relative;
   padding-bottom: 500%; }
 
 .ratio-wrapper-2-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 550%; }
 
 .ratio-wrapper-2-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 600%; }
 
 .ratio-wrapper-2-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 650%; }
 
 .ratio-wrapper-2-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 700%; }
 
 .ratio-wrapper-2-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 750%; }
 
 .ratio-wrapper-3-1 {
-  padding-bottom: 300%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 33.33333%; }
 
 .ratio-wrapper-3-2 {
-  padding-bottom: 150%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 66.66667%; }
 
 .ratio-wrapper-3-3 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-3-4 {
+  width: 100%;
+  position: relative;
   padding-bottom: 133.33333%; }
 
 .ratio-wrapper-3-5 {
+  width: 100%;
+  position: relative;
   padding-bottom: 166.66667%; }
 
 .ratio-wrapper-3-6 {
+  width: 100%;
+  position: relative;
   padding-bottom: 200%; }
 
 .ratio-wrapper-3-7 {
+  width: 100%;
+  position: relative;
   padding-bottom: 233.33333%; }
 
 .ratio-wrapper-3-8 {
+  width: 100%;
+  position: relative;
   padding-bottom: 266.66667%; }
 
 .ratio-wrapper-3-9 {
+  width: 100%;
+  position: relative;
   padding-bottom: 300%; }
 
 .ratio-wrapper-3-10 {
+  width: 100%;
+  position: relative;
   padding-bottom: 333.33333%; }
 
 .ratio-wrapper-3-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 366.66667%; }
 
 .ratio-wrapper-3-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 400%; }
 
 .ratio-wrapper-3-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 433.33333%; }
 
 .ratio-wrapper-3-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 466.66667%; }
 
 .ratio-wrapper-3-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 500%; }
 
 .ratio-wrapper-4-1 {
-  padding-bottom: 400%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 25%; }
 
 .ratio-wrapper-4-2 {
-  padding-bottom: 200%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 50%; }
 
 .ratio-wrapper-4-3 {
-  padding-bottom: 133.33333%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 75%; }
 
 .ratio-wrapper-4-4 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-4-5 {
+  width: 100%;
+  position: relative;
   padding-bottom: 125%; }
 
 .ratio-wrapper-4-6 {
+  width: 100%;
+  position: relative;
   padding-bottom: 150%; }
 
 .ratio-wrapper-4-7 {
+  width: 100%;
+  position: relative;
   padding-bottom: 175%; }
 
 .ratio-wrapper-4-8 {
+  width: 100%;
+  position: relative;
   padding-bottom: 200%; }
 
 .ratio-wrapper-4-9 {
+  width: 100%;
+  position: relative;
   padding-bottom: 225%; }
 
 .ratio-wrapper-4-10 {
+  width: 100%;
+  position: relative;
   padding-bottom: 250%; }
 
 .ratio-wrapper-4-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 275%; }
 
 .ratio-wrapper-4-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 300%; }
 
 .ratio-wrapper-4-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 325%; }
 
 .ratio-wrapper-4-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 350%; }
 
 .ratio-wrapper-4-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 375%; }
 
 .ratio-wrapper-5-1 {
-  padding-bottom: 500%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 20%; }
 
 .ratio-wrapper-5-2 {
-  padding-bottom: 250%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 40%; }
 
 .ratio-wrapper-5-3 {
-  padding-bottom: 166.66667%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 60%; }
 
 .ratio-wrapper-5-4 {
-  padding-bottom: 125%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 80%; }
 
 .ratio-wrapper-5-5 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-5-6 {
+  width: 100%;
+  position: relative;
   padding-bottom: 120%; }
 
 .ratio-wrapper-5-7 {
+  width: 100%;
+  position: relative;
   padding-bottom: 140%; }
 
 .ratio-wrapper-5-8 {
+  width: 100%;
+  position: relative;
   padding-bottom: 160%; }
 
 .ratio-wrapper-5-9 {
+  width: 100%;
+  position: relative;
   padding-bottom: 180%; }
 
 .ratio-wrapper-5-10 {
+  width: 100%;
+  position: relative;
   padding-bottom: 200%; }
 
 .ratio-wrapper-5-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 220%; }
 
 .ratio-wrapper-5-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 240%; }
 
 .ratio-wrapper-5-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 260%; }
 
 .ratio-wrapper-5-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 280%; }
 
 .ratio-wrapper-5-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 300%; }
 
 .ratio-wrapper-6-1 {
-  padding-bottom: 600%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 16.66667%; }
 
 .ratio-wrapper-6-2 {
-  padding-bottom: 300%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 33.33333%; }
 
 .ratio-wrapper-6-3 {
-  padding-bottom: 200%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 50%; }
 
 .ratio-wrapper-6-4 {
-  padding-bottom: 150%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 66.66667%; }
 
 .ratio-wrapper-6-5 {
-  padding-bottom: 120%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 83.33333%; }
 
 .ratio-wrapper-6-6 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-6-7 {
+  width: 100%;
+  position: relative;
   padding-bottom: 116.66667%; }
 
 .ratio-wrapper-6-8 {
+  width: 100%;
+  position: relative;
   padding-bottom: 133.33333%; }
 
 .ratio-wrapper-6-9 {
+  width: 100%;
+  position: relative;
   padding-bottom: 150%; }
 
 .ratio-wrapper-6-10 {
+  width: 100%;
+  position: relative;
   padding-bottom: 166.66667%; }
 
 .ratio-wrapper-6-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 183.33333%; }
 
 .ratio-wrapper-6-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 200%; }
 
 .ratio-wrapper-6-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 216.66667%; }
 
 .ratio-wrapper-6-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 233.33333%; }
 
 .ratio-wrapper-6-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 250%; }
 
 .ratio-wrapper-7-1 {
-  padding-bottom: 700%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 14.28571%; }
 
 .ratio-wrapper-7-2 {
-  padding-bottom: 350%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 28.57143%; }
 
 .ratio-wrapper-7-3 {
-  padding-bottom: 233.33333%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 42.85714%; }
 
 .ratio-wrapper-7-4 {
-  padding-bottom: 175%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 57.14286%; }
 
 .ratio-wrapper-7-5 {
-  padding-bottom: 140%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 71.42857%; }
 
 .ratio-wrapper-7-6 {
-  padding-bottom: 116.66667%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 85.71429%; }
 
 .ratio-wrapper-7-7 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-7-8 {
+  width: 100%;
+  position: relative;
   padding-bottom: 114.28571%; }
 
 .ratio-wrapper-7-9 {
+  width: 100%;
+  position: relative;
   padding-bottom: 128.57143%; }
 
 .ratio-wrapper-7-10 {
+  width: 100%;
+  position: relative;
   padding-bottom: 142.85714%; }
 
 .ratio-wrapper-7-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 157.14286%; }
 
 .ratio-wrapper-7-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 171.42857%; }
 
 .ratio-wrapper-7-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 185.71429%; }
 
 .ratio-wrapper-7-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 200%; }
 
 .ratio-wrapper-7-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 214.28571%; }
 
 .ratio-wrapper-8-1 {
-  padding-bottom: 800%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 12.5%; }
 
 .ratio-wrapper-8-2 {
-  padding-bottom: 400%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 25%; }
 
 .ratio-wrapper-8-3 {
-  padding-bottom: 266.66667%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 37.5%; }
 
 .ratio-wrapper-8-4 {
-  padding-bottom: 200%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 50%; }
 
 .ratio-wrapper-8-5 {
-  padding-bottom: 160%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 62.5%; }
 
 .ratio-wrapper-8-6 {
-  padding-bottom: 133.33333%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 75%; }
 
 .ratio-wrapper-8-7 {
-  padding-bottom: 114.28571%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 87.5%; }
 
 .ratio-wrapper-8-8 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-8-9 {
+  width: 100%;
+  position: relative;
   padding-bottom: 112.5%; }
 
 .ratio-wrapper-8-10 {
+  width: 100%;
+  position: relative;
   padding-bottom: 125%; }
 
 .ratio-wrapper-8-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 137.5%; }
 
 .ratio-wrapper-8-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 150%; }
 
 .ratio-wrapper-8-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 162.5%; }
 
 .ratio-wrapper-8-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 175%; }
 
 .ratio-wrapper-8-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 187.5%; }
 
 .ratio-wrapper-9-1 {
-  padding-bottom: 900%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 11.11111%; }
 
 .ratio-wrapper-9-2 {
-  padding-bottom: 450%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 22.22222%; }
 
 .ratio-wrapper-9-3 {
-  padding-bottom: 300%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 33.33333%; }
 
 .ratio-wrapper-9-4 {
-  padding-bottom: 225%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 44.44444%; }
 
 .ratio-wrapper-9-5 {
-  padding-bottom: 180%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 55.55556%; }
 
 .ratio-wrapper-9-6 {
-  padding-bottom: 150%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 66.66667%; }
 
 .ratio-wrapper-9-7 {
-  padding-bottom: 128.57143%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 77.77778%; }
 
 .ratio-wrapper-9-8 {
-  padding-bottom: 112.5%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 88.88889%; }
 
 .ratio-wrapper-9-9 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-9-10 {
+  width: 100%;
+  position: relative;
   padding-bottom: 111.11111%; }
 
 .ratio-wrapper-9-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 122.22222%; }
 
 .ratio-wrapper-9-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 133.33333%; }
 
 .ratio-wrapper-9-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 144.44444%; }
 
 .ratio-wrapper-9-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 155.55556%; }
 
 .ratio-wrapper-9-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 166.66667%; }
 
 .ratio-wrapper-10-1 {
-  padding-bottom: 1000%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 10%; }
 
 .ratio-wrapper-10-2 {
-  padding-bottom: 500%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 20%; }
 
 .ratio-wrapper-10-3 {
-  padding-bottom: 333.33333%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 30%; }
 
 .ratio-wrapper-10-4 {
-  padding-bottom: 250%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 40%; }
 
 .ratio-wrapper-10-5 {
-  padding-bottom: 200%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 50%; }
 
 .ratio-wrapper-10-6 {
-  padding-bottom: 166.66667%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 60%; }
 
 .ratio-wrapper-10-7 {
-  padding-bottom: 142.85714%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 70%; }
 
 .ratio-wrapper-10-8 {
-  padding-bottom: 125%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 80%; }
 
 .ratio-wrapper-10-9 {
-  padding-bottom: 111.11111%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 90%; }
 
 .ratio-wrapper-10-10 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-10-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 110%; }
 
 .ratio-wrapper-10-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 120%; }
 
 .ratio-wrapper-10-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 130%; }
 
 .ratio-wrapper-10-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 140%; }
 
 .ratio-wrapper-10-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 150%; }
 
 .ratio-wrapper-11-1 {
-  padding-bottom: 1100%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 9.09091%; }
 
 .ratio-wrapper-11-2 {
-  padding-bottom: 550%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 18.18182%; }
 
 .ratio-wrapper-11-3 {
-  padding-bottom: 366.66667%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 27.27273%; }
 
 .ratio-wrapper-11-4 {
-  padding-bottom: 275%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 36.36364%; }
 
 .ratio-wrapper-11-5 {
-  padding-bottom: 220%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 45.45455%; }
 
 .ratio-wrapper-11-6 {
-  padding-bottom: 183.33333%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 54.54545%; }
 
 .ratio-wrapper-11-7 {
-  padding-bottom: 157.14286%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 63.63636%; }
 
 .ratio-wrapper-11-8 {
-  padding-bottom: 137.5%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 72.72727%; }
 
 .ratio-wrapper-11-9 {
-  padding-bottom: 122.22222%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 81.81818%; }
 
 .ratio-wrapper-11-10 {
-  padding-bottom: 110%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 90.90909%; }
 
 .ratio-wrapper-11-11 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-11-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 109.09091%; }
 
 .ratio-wrapper-11-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 118.18182%; }
 
 .ratio-wrapper-11-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 127.27273%; }
 
 .ratio-wrapper-11-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 136.36364%; }
 
 .ratio-wrapper-12-1 {
-  padding-bottom: 1200%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 8.33333%; }
 
 .ratio-wrapper-12-2 {
-  padding-bottom: 600%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 16.66667%; }
 
 .ratio-wrapper-12-3 {
-  padding-bottom: 400%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 25%; }
 
 .ratio-wrapper-12-4 {
-  padding-bottom: 300%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 33.33333%; }
 
 .ratio-wrapper-12-5 {
-  padding-bottom: 240%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 41.66667%; }
 
 .ratio-wrapper-12-6 {
-  padding-bottom: 200%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 50%; }
 
 .ratio-wrapper-12-7 {
-  padding-bottom: 171.42857%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 58.33333%; }
 
 .ratio-wrapper-12-8 {
-  padding-bottom: 150%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 66.66667%; }
 
 .ratio-wrapper-12-9 {
-  padding-bottom: 133.33333%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 75%; }
 
 .ratio-wrapper-12-10 {
-  padding-bottom: 120%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 83.33333%; }
 
 .ratio-wrapper-12-11 {
-  padding-bottom: 109.09091%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 91.66667%; }
 
 .ratio-wrapper-12-12 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-12-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 108.33333%; }
 
 .ratio-wrapper-12-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 116.66667%; }
 
 .ratio-wrapper-12-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 125%; }
 
 .ratio-wrapper-13-1 {
-  padding-bottom: 1300%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 7.69231%; }
 
 .ratio-wrapper-13-2 {
-  padding-bottom: 650%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 15.38462%; }
 
 .ratio-wrapper-13-3 {
-  padding-bottom: 433.33333%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 23.07692%; }
 
 .ratio-wrapper-13-4 {
-  padding-bottom: 325%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 30.76923%; }
 
 .ratio-wrapper-13-5 {
-  padding-bottom: 260%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 38.46154%; }
 
 .ratio-wrapper-13-6 {
-  padding-bottom: 216.66667%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 46.15385%; }
 
 .ratio-wrapper-13-7 {
-  padding-bottom: 185.71429%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 53.84615%; }
 
 .ratio-wrapper-13-8 {
-  padding-bottom: 162.5%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 61.53846%; }
 
 .ratio-wrapper-13-9 {
-  padding-bottom: 144.44444%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 69.23077%; }
 
 .ratio-wrapper-13-10 {
-  padding-bottom: 130%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 76.92308%; }
 
 .ratio-wrapper-13-11 {
-  padding-bottom: 118.18182%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 84.61538%; }
 
 .ratio-wrapper-13-12 {
-  padding-bottom: 108.33333%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 92.30769%; }
 
 .ratio-wrapper-13-13 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-13-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 107.69231%; }
 
 .ratio-wrapper-13-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 115.38462%; }
 
 .ratio-wrapper-14-1 {
-  padding-bottom: 1400%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 7.14286%; }
 
 .ratio-wrapper-14-2 {
-  padding-bottom: 700%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 14.28571%; }
 
 .ratio-wrapper-14-3 {
-  padding-bottom: 466.66667%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 21.42857%; }
 
 .ratio-wrapper-14-4 {
-  padding-bottom: 350%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 28.57143%; }
 
 .ratio-wrapper-14-5 {
-  padding-bottom: 280%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 35.71429%; }
 
 .ratio-wrapper-14-6 {
-  padding-bottom: 233.33333%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 42.85714%; }
 
 .ratio-wrapper-14-7 {
-  padding-bottom: 200%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 50%; }
 
 .ratio-wrapper-14-8 {
-  padding-bottom: 175%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 57.14286%; }
 
 .ratio-wrapper-14-9 {
-  padding-bottom: 155.55556%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 64.28571%; }
 
 .ratio-wrapper-14-10 {
-  padding-bottom: 140%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 71.42857%; }
 
 .ratio-wrapper-14-11 {
-  padding-bottom: 127.27273%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 78.57143%; }
 
 .ratio-wrapper-14-12 {
-  padding-bottom: 116.66667%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 85.71429%; }
 
 .ratio-wrapper-14-13 {
-  padding-bottom: 107.69231%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 92.85714%; }
 
 .ratio-wrapper-14-14 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
 
 .ratio-wrapper-14-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 107.14286%; }
 
 .ratio-wrapper-15-1 {
-  padding-bottom: 1500%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 6.66667%; }
 
 .ratio-wrapper-15-2 {
-  padding-bottom: 750%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 13.33333%; }
 
 .ratio-wrapper-15-3 {
-  padding-bottom: 500%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 20%; }
 
 .ratio-wrapper-15-4 {
-  padding-bottom: 375%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 26.66667%; }
 
 .ratio-wrapper-15-5 {
-  padding-bottom: 300%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 33.33333%; }
 
 .ratio-wrapper-15-6 {
-  padding-bottom: 250%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 40%; }
 
 .ratio-wrapper-15-7 {
-  padding-bottom: 214.28571%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 46.66667%; }
 
 .ratio-wrapper-15-8 {
-  padding-bottom: 187.5%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 53.33333%; }
 
 .ratio-wrapper-15-9 {
-  padding-bottom: 166.66667%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 60%; }
 
 .ratio-wrapper-15-10 {
-  padding-bottom: 150%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 66.66667%; }
 
 .ratio-wrapper-15-11 {
-  padding-bottom: 136.36364%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 73.33333%; }
 
 .ratio-wrapper-15-12 {
-  padding-bottom: 125%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 80%; }
 
 .ratio-wrapper-15-13 {
-  padding-bottom: 115.38462%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 86.66667%; }
 
 .ratio-wrapper-15-14 {
-  padding-bottom: 107.14286%; }
+  width: 100%;
+  position: relative;
+  padding-bottom: 93.33333%; }
 
 .ratio-wrapper-15-15 {
+  width: 100%;
+  position: relative;
   padding-bottom: 100%; }
-
-/*
-@each $size in $grids-available {
-	@include ab-gridX($size);
-}
-
-/*
-.ratio-wrapper-1-1  { padding-bottom: 100%; }
-.ratio-wrapper-10-9 { padding-bottom: 90%; }
-.ratio-wrapper-5-4  { padding-bottom: 80%; }
-.ratio-wrapper-4-3  { padding-bottom: 75%; }
-.ratio-wrapper-3-2  { padding-bottom: 66.66%; }
-.ratio-wrapper-8-5  { padding-bottom: 62.5%; }
-.ratio-wrapper-16-9 { padding-bottom: 56.25%; }
-.ratio-wrapper-2-1  { padding-bottom: 50%; }
-.ratio-wrapper-3-1  { padding-bottom: 33%; }
-.ratio-wrapper-7-2  { padding-bottom: 28.5%; }
-.ratio-wrapper-4-1  { padding-bottom: 25%; }
-.ratio-wrapper-5-1  { padding-bottom: 20%; }
-
-.ratio-wrapper-3-4  { padding-bottom: 133%; }
-.ratio-wrapper-5-8  { padding-bottom: 160%; }
-.ratio-wrapper-9-16 { padding-bottom: 177%; }
-.ratio-wrapper-1-2  { padding-bottom: 200%; }
-*/
 
 /*# sourceMappingURL=ratios.css.map */
