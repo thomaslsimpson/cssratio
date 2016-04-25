@@ -1,0 +1,75 @@
+/**
+ * Thomas Simpson
+ * This is totally free software. Have fun.
+ * 
+ * Produces ratio-based css classes that can be used to get fixed sizes.
+ */
+.wrapper-ratio {
+  width: 100%;
+  position: relative; }
+  .wrapper-ratio .wrapper-inner {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; }
+    .wrapper-ratio .wrapper-inner .footer {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px; }
+    .wrapper-ratio .wrapper-inner .header {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px; }
+
+.wrapper-ratio-1-1 {
+  padding-bottom: 100%; }
+
+.wrapper-ratio-10-9 {
+  padding-bottom: 90%; }
+
+.wrapper-ratio-5-4 {
+  padding-bottom: 80%; }
+
+.wrapper-ratio-4-3 {
+  padding-bottom: 75%; }
+
+.wrapper-ratio-3-2 {
+  padding-bottom: 66.66%; }
+
+.wrapper-ratio-8-5 {
+  padding-bottom: 62.5%; }
+
+.wrapper-ratio-16-9 {
+  padding-bottom: 56.25%; }
+
+.wrapper-ratio-2-1 {
+  padding-bottom: 50%; }
+
+.wrapper-ratio-3-1 {
+  padding-bottom: 33%; }
+
+.wrapper-ratio-7-2 {
+  padding-bottom: 28.5%; }
+
+.wrapper-ratio-4-1 {
+  padding-bottom: 25%; }
+
+.wrapper-ratio-5-1 {
+  padding-bottom: 20%; }
+
+.wrapper-ratio-3-4 {
+  padding-bottom: 133%; }
+
+.wrapper-ratio-5-8 {
+  padding-bottom: 160%; }
+
+.wrapper-ratio-9-16 {
+  padding-bottom: 177%; }
+
+.wrapper-ratio-1-2 {
+  padding-bottom: 200%; }
+
+/*# sourceMappingURL=ratios.css.map */
