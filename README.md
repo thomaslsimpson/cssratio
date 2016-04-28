@@ -9,9 +9,13 @@ You can poke aroudn in the code to find the start and stop points or change them
 
 And before you tell me, I do infact know that 1-2, 2-4, 3-6, and such are the same. I don't care
 and you shouldn't worry either. I would rather put in a few extra characters and dodge the complaints
-from non-math people. *If YOU would like to remove the duplicates in your own, it is simple enough: just
-use prime numbers on one of the loops.*
+from non-math people. 
 
+*If YOU would like to remove the duplicates in your own, it is simple enough: just make sure that 
+you only output values where:  `max(w,h) / min(w,h)` is a whole number.*
+
+Examples
+========
 ```
 <div class='SOMETHING-WITH-WIDTH'> <!-- this outside div should have a width specifier -->
 	<div class='ratio-wrapper-WIDE-HIGH'> <!-- WIDE and HIGH are ratios from 1 to 16 e.g. '3-4' -->
